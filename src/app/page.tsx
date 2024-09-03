@@ -1,8 +1,9 @@
+import TabWidget from "@/components/TabWidget/TabWidget";
 
 export default function Home() {
   return (
     <main>
-      <h3 className="text-green-500">hi</h3>
+      <TabWidget />
     </main>
   );
 }

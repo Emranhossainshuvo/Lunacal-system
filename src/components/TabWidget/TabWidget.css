@@ -1,0 +1,5 @@
+.active-tab {
+    color: #FF5722;  /* Change the text color */
+    border-bottom: 2px solid #FF5722; /* Add a bottom border */
+    font-weight: bold; /* Make the text bold */
+  }
