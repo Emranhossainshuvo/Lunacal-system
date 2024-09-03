@@ -1,35 +1,24 @@
 'use client'
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
-import "./TabWidget.css"
 
 const TabWidget = () => {
 
     return (
-        <Tabs className="bg-[#363C43]">
-            <TabList className="bg-[#171717] flex gap-4 items-center text-[#ffffff]">
-                <Tab selectedClassName="active-tab" id='tabinc'>About me</Tab>
-                <Tab selectedClassName="active-tab" id='tabinc1'>Experience</Tab>
-                <Tab selectedClassName="active-tab" id='tabinc2'>Recommend</Tab>
-            </TabList>
+        <div role="tablist" className="tabs tabs-bordered">
+            <input type="radio" name="my_tabs_1" role="tab" className="tab" aria-label="Tab 1" />
+            <div role="tabpanel" className="tab-content p-10">Tab content 1</div>
 
-            <TabPanel className="lol">
-                <span>
-                    <p>
-                        Hello! I’m Dave, your sales rep here from Salesforce. I’ve been working at this awesome company for 3 years now.
-                    </p>
-                    <p>I was born and raised in Albany, NY& have been living in Santa Carla for the past 10 years my wife Tiffany and my 4 year old twin daughters- Emma and Ella. Both of them are just starting school, so my calender is usually blocked between 9-10 AM. This is a...</p>
-                </span>
-            </TabPanel>
-            <TabPanel>
-                <span>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio architecto, ducimus rem voluptatem praesentium magnam, recusandae nisi expedita, quasi illum perferendis libero? Fugiat architecto sint inventore laborum minima assumenda autem tenetur! Est sapiente voluptas culpa unde. Natus voluptatum quibusdam harum nemo porro suscipit molestiae, iusto in nobis. Voluptas, reprehenderit omnis.</p>
-                </span>
-            </TabPanel>
-            <TabPanel>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam quae similique autem? Officiis, soluta! Fugit ad quisquam, doloribus, reiciendis expedita, autem maxime inventore veniam ea est non consequuntur velit recusandae. Tempore, neque quo, earum velit nihil ducimus rerum reprehenderit consequatur natus, ea nesciunt accusantium magnam laboriosam. Cumque quisquam voluptatum voluptatem.</p>
-            </TabPanel>
-        </Tabs>
+            <input
+                type="radio"
+                name="my_tabs_1"
+                role="tab"
+                className="tab"
+                aria-label="Tab 2"
+                defaultChecked />
+            <div role="tabpanel" className="tab-content p-10">Tab content 2</div>
+
+            <input type="radio" name="my_tabs_1" role="tab" className="tab" aria-label="Tab 3" />
+            <div role="tabpanel" className="tab-content p-10">Tab content 3</div>
+        </div>
     );
 };
 
