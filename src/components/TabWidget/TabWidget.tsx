@@ -4,15 +4,16 @@ import 'react-tabs/style/react-tabs.css';
 import "./TabWidget.css"
 
 const TabWidget = () => {
+
     return (
         <Tabs className="bg-[#363C43]">
-            <TabList className="bg-[#171717] flex gap-4 text-[#ffffff]">
-                <Tab selectedClassName="active-tab">About me</Tab>
-                <Tab selectedClassName="active-tab">Experience</Tab>
-                <Tab selectedClassName="active-tab">Recommend</Tab>
+            <TabList className="bg-[#171717] flex gap-4 items-center text-[#ffffff]">
+                <Tab selectedClassName="active-tab" id='tabinc'>About me</Tab>
+                <Tab selectedClassName="active-tab" id='tabinc1'>Experience</Tab>
+                <Tab selectedClassName="active-tab" id='tabinc2'>Recommend</Tab>
             </TabList>
 
-            <TabPanel>
+            <TabPanel className="lol">
                 <span>
                     <p>
                         Hello! I’m Dave, your sales rep here from Salesforce. I’ve been working at this awesome company for 3 years now.

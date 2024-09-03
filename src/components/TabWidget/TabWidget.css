@@ -1,5 +1,19 @@
 .active-tab {
-    color: #FF5722;  /* Change the text color */
-    border-bottom: 2px solid #FF5722; /* Add a bottom border */
-    font-weight: bold; /* Make the text bold */
-  }
+    text-decoration: none;
+    border-bottom: none;
+    font-weight: bold;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-bottom: 14px;
+    padding-top: 14px;
+    background-color: #28292f;
+    border-radius: 16px;
+    margin: 5px;
+}
+
+.react-tabs__tab--selected {
+    text-decoration: none !important; /* Remove underline */
+    border-bottom: none !important; /* Remove bottom border */
+    color: #FF5722 !important; /* Example: Change text color for active tab */
+    font-weight: bold !important; /* Example: Make the text bold for active tab */
+}
